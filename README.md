@@ -25,3 +25,8 @@ This project is a Streamlit application for Exploratory Data Analysis (EDA) and 
 - ✅ Predicted species image displayed
 
 - ✅ Fully contained in a Streamlit web app
+
+## Live Demo:
+
+Check out the live app here: [Streamlit App](https://fuuhbj3t8tbesskj4xnwf2.streamlit.app/)
+

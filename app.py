@@ -7,7 +7,7 @@ import os
 
 ## Load the model and dataset
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-file_path = os.path.join(BASE_DIR, "data", "raw", "iris.csv")
+file_path = os.path.join(BASE_DIR, "data", "raw", "Iris.csv")
 
 df = pd.read_csv(file_path)
 df.drop("Id",axis=1,inplace=True)

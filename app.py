@@ -3,9 +3,13 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import pandas as pd
 import joblib
+import os
 
 ## Load the model and dataset
-df = pd.read_csv("data/raw/iris.csv")
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+file_path = os.path.join(BASE_DIR, "data", "raw", "iris.csv")
+
+df = pd.read_csv(file_path)
 df.drop("Id",axis=1,inplace=True)
 target_names = df["Species"].unique().tolist()
 model = joblib.load("model/iris-model.pkl")
